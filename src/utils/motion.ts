@@ -1,3 +1,4 @@
+import { Variants } from "framer-motion";
 import { Direction } from "../types.dt";
 
 export const textVariant = (delay: number) => {
@@ -77,7 +78,7 @@ export const slideIn = (direction: Direction, type: string, delay: number, durat
   };
 };
 
-export const staggerContainer = (staggerChildren: string, delayChildren: number) => {
+export const staggerContainer = (staggerChildren: number, delayChildren: number): Variants => {
   return {
     hidden: {},
     show: {
