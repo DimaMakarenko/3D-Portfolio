@@ -24,7 +24,7 @@ import {
   tripguide,
   threejs,
 } from "../assets";
-import { Service } from "../types.dt";
+import { Experience, Service } from "../types.dt";
 
 export const navLinks = [
   {
@@ -115,7 +115,7 @@ const technologies = [
   },
 ];
 
-const experiences = [
+const experiences: Experience[] = [
   {
     title: "React.js Developer",
     company_name: "Starbucks",
