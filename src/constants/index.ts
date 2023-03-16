@@ -24,7 +24,7 @@ import {
   tripguide,
   threejs,
 } from "../assets";
-import { Experience, Service, Technologies } from "../types.dt";
+import { Experience, Project, Service, Technologies } from "../types.dt";
 
 export const navLinks = [
   {
@@ -197,7 +197,7 @@ const testimonials = [
   },
 ];
 
-const projects = [
+const projects: Project[] = [
   {
     name: "Car Rent",
     description:

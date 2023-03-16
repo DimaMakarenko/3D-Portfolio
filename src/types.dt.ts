@@ -18,3 +18,11 @@ export type Technologies = {
   name: string;
   icon: string;
 }
+
+export type Project = {
+  name: string;
+  description: string;
+  tags: { name: string; color: string }[];
+  image: string;
+  source_code_link: string;
+}
