@@ -1,30 +1,35 @@
-import { Variants } from "framer-motion";
-import { Direction } from "../types.dt";
+import { Variants } from 'framer-motion';
+import { Direction } from '../types.dt';
 
 export const textVariant = (delay: number) => {
   return {
     hidden: {
       y: -50,
-      opacity: 0,
+      opacity: 0
     },
     show: {
       y: 0,
       opacity: 1,
       transition: {
-        type: "spring",
+        type: 'spring',
         duration: 1.25,
-        delay: delay,
-      },
-    },
+        delay: delay
+      }
+    }
   };
 };
 
-export const fadeIn = (direction: Direction | string, type: string, delay: number, duration: number) => {
+export const fadeIn = (
+  direction: Direction | string,
+  type: string,
+  delay: number,
+  duration: number
+) => {
   return {
     hidden: {
-      x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
-      y: direction === "up" ? 100 : direction === "down" ? -100 : 0,
-      opacity: 0,
+      x: direction === 'left' ? 100 : direction === 'right' ? -100 : 0,
+      y: direction === 'up' ? 100 : direction === 'down' ? -100 : 0,
+      opacity: 0
     },
     show: {
       x: 0,
@@ -34,9 +39,9 @@ export const fadeIn = (direction: Direction | string, type: string, delay: numbe
         type: type,
         delay: delay,
         duration: duration,
-        ease: "easeOut",
-      },
-    },
+        ease: 'easeOut'
+      }
+    }
   };
 };
 
@@ -44,26 +49,26 @@ export const zoomIn = (delay: number, duration: number) => {
   return {
     hidden: {
       scale: 0,
-      opacity: 0,
+      opacity: 0
     },
     show: {
       scale: 1,
       opacity: 1,
       transition: {
-        type: "tween",
+        type: 'tween',
         delay: delay,
         duration: duration,
-        ease: "easeOut",
-      },
-    },
+        ease: 'easeOut'
+      }
+    }
   };
 };
 
 export const slideIn = (direction: Direction, type: string, delay: number, duration: number) => {
   return {
     hidden: {
-      x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
-      y: direction === "up" ? "100%" : direction === "down" ? "100%" : 0,
+      x: direction === 'left' ? '-100%' : direction === 'right' ? '100%' : 0,
+      y: direction === 'up' ? '100%' : direction === 'down' ? '100%' : 0
     },
     show: {
       x: 0,
@@ -72,9 +77,9 @@ export const slideIn = (direction: Direction, type: string, delay: number, durat
         type: type,
         delay: delay,
         duration: duration,
-        ease: "easeOut",
-      },
-    },
+        ease: 'easeOut'
+      }
+    }
   };
 };
 
@@ -84,8 +89,8 @@ export const staggerContainer = (staggerChildren: number, delayChildren: number)
     show: {
       transition: {
         staggerChildren: staggerChildren,
-        delayChildren: delayChildren || 0,
-      },
-    },
+        delayChildren: delayChildren || 0
+      }
+    }
   };
 };
