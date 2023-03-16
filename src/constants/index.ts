@@ -24,7 +24,7 @@ import {
   tripguide,
   threejs,
 } from "../assets";
-import { Experience, Service } from "../types.dt";
+import { Experience, Service, Technologies } from "../types.dt";
 
 export const navLinks = [
   {
@@ -60,7 +60,7 @@ const services: Service[] = [
   },
 ];
 
-const technologies = [
+const technologies: Technologies[] = [
   {
     name: "HTML 5",
     icon: html,

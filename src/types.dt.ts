@@ -5,7 +5,6 @@ export type Service = {
   title: string
 }
 
-
 export type Experience = {
   title: string,
   company_name: string,
@@ -13,5 +12,9 @@ export type Experience = {
   iconBg: string,
   date: string,
   points: string[]
+}
 
+export type Technologies = {
+  name: string;
+  icon: string;
 }
